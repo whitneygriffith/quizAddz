@@ -17,3 +17,11 @@ Based on the Flask tutorial https://blog.miguelgrinberg.com/post/the-flask-mega-
 ```pip install -r requirements.txt```
 - Run program
 ```python run.py```
+
+
+## Frontend 
+
+- The QuizAddz, Learn how to add is a base template that will persist on all pages
+
+- To create a new page, duplicate index.html and edit below the first line. 
+

@@ -1,8 +1,9 @@
 from flask import render_template
 from app import app
 
+#Initial Page for the Web App which takes our users to the login screen
 @app.route('/')
-@app.route('/index')
+@app.route('/login')
 def index():
     user = {'nickname': 'Miguel'}  # fake user
     posts = [  # fake array of posts
@@ -15,7 +16,7 @@ def index():
             'body': 'The Avengers movie was so cool!' 
         }
     ]
-    return render_template("index.html",
+    return render_template("login.html",
                            title='Home',
                            user=user,
                            posts=posts)
