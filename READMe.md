@@ -2,7 +2,9 @@
 
 ## A web app that teaches first grade students in the US how to add a set of numbers, which can vary between adding one number, or adding five numbers. 
 
-Based on the Flask tutorial https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+[Based on the Flask tutorial] (https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+
+[Flask + Firebase]( https://burhan.io/flask-web-api-with-firebase/) 
 
 
 ## To run
@@ -17,6 +19,11 @@ Based on the Flask tutorial https://blog.miguelgrinberg.com/post/the-flask-mega-
 ```pip install -r requirements.txt```
 - Run program
 ```python run.py```
+
+
+##General Guidelines
+- When ever you add a new pip package please also add it to your requirements.txt
+```pip freeze > requirements.txt```
 
 
 ## Frontend 

@@ -1,22 +1,18 @@
-from flask import render_template
+from flask import render_template, Flask, request, flash
 from app import app
+from firebase import firebase
+from forms import Login
 
 #Initial Page for the Web App which takes our users to the login screen
-@app.route('/')
-@app.route('/login')
+@app.route('/', methods = ['GET', 'POST'])
+@app.route('/login', methods = ['GET', 'POST'])
 def index():
-    user = {'nickname': 'Miguel'}  # fake user
-    posts = [  # fake array of posts
-        { 
-            'author': {'nickname': 'John'}, 
-            'body': 'Beautiful day in Portland!' 
-        },
-        { 
-            'author': {'nickname': 'Susan'}, 
-            'body': 'The Avengers movie was so cool!' 
-        }
-    ]
-    return render_template("login.html",
-                           title='Home',
-                           user=user,
-                           posts=posts)
+    form = Login()
+    if request.method == 'POST':
+        if form.validate() == False:
+            flash('All fields are required.')
+            return render_template('login.html', form = form)
+        else:
+            return render_template('home.html') #go to home screen
+    elif request.method == 'GET':
+        return render_template('login.html', form = form)    

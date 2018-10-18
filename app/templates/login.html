@@ -1,7 +1,24 @@
 {% extends "base.html" %} {% block content %}
-<h1>Hi, {{ user.nickname }}!</h1>
-{% for post in posts %}
-<div>
-    <p>{{ post.author.nickname }} says: <b>{{ post.body }}</b></p>
-</div>
-{% endfor %} {% endblock %}
+<br>
+<form action="http://127.0.0.1:5000/login" method = post>
+    <fieldset>
+        <legend>Login</legend>
+        {{ form.hidden_tag() }}
+
+        <div style=font-size:20px; font-weight:bold; margin-left:150px;>
+
+            {{ form.email.label }}<br>
+            {{ form.email }}
+            <br>
+
+            {{ form.password.label }}<br>
+            {{ form.password }}
+            <br>
+
+            {{ form.submit }}
+        </div>
+
+    </fieldset>
+</form>
+
+{% endblock %}
