@@ -10,6 +10,8 @@
 
 [The Wireframe Link](https://wireframe.cc/pro/pp/9be4d63ef204139/) 
 
+There is a wireframe.pdf but it don't look good so use the link above please.
+
 
 ## To run
 - Clone Repo
