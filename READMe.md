@@ -23,7 +23,7 @@
 ```python run.py```
 
 
-##General Guidelines
+## General Guidelines
 - When ever you add a new pip package please also add it to your requirements.txt
 ```pip freeze > requirements.txt```
 
@@ -34,3 +34,19 @@
 
 - To create a new page, duplicate index.html and edit below the first line. 
 
+## User Stories
+
+The following **required** user stories are:
+
+- [ ] User can to login/logout.
+- [ ] User can create challenge with a name at least 3 questions in challenge.
+- [ ] User can answer challenge, see scores, and quit challenge.
+- [ ] User can view all created challenges.
+- [ ] User can delete challenges.
+
+The following **optional** user stories are:
+
+- [ ] User can complete other users challenges.
+- [ ] User can compete with other users on same challenge.
+- [ ] User can attempt questions multiple times.
+- [ ] Challenge will reveal the answer after multiple failed attempts.
