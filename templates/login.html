@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block content %}
 <br>
-<form action="http://127.0.0.1:5000/login" method = post>
+<form>
     <fieldset>
         <legend>Login</legend>
         {{ form.hidden_tag() }}
@@ -17,8 +17,10 @@
 
             {{ form.submit }}
         </div>
-
+        <button> Don't have an account? Sign Up</button>
     </fieldset>
 </form>
+
+
 
 {% endblock %}
