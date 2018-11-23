@@ -29,7 +29,8 @@ There is a wireframe.pdf but it don't look good so use the link above please.
 - Run program
 ```export FLASK_APP=app.py
 export FLASK_ENV=development
-flask run```
+flask run 
+```
 
 OR
 
