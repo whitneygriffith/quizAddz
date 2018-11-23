@@ -20,5 +20,10 @@ def signup(username, password):
 def login(username, password):
     return True
 
+#TODO: andrervincent - review this once users can enter to landing page
+def logout():
+	return auth.signOut()
+	
+
 
 
