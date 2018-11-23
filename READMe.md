@@ -25,8 +25,15 @@ There is a wireframe.pdf but it don't look good so use the link above please.
 - Confirm the virtual environment have been activated by checking to see if (venv) is in the command prompt 
 - Install all the python dependencies in local virtual environment:
 ```pip install -r requirements.txt```
+- Create a ```.env``` file to add [application configs](https://docs.google.com/document/d/13_Xjs_kcCqXCH41h3DVKtDAiLDu-3wSkAvgLAproglQ/edit?usp=sharing)
 - Run program
-```python run.py```
+```export FLASK_APP=app.py
+export FLASK_ENV=development
+flask run```
+
+OR
+
+```python app.py```
 
 
 ## General Guidelines

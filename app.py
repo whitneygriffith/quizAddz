@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, flash, redirect, session, abort
 from forms import Login
-from firebaseAPI import login, signup
+from firebaseAPI import login, signup, logout
 import os
 from sqlalchemy.orm import sessionmaker
 from tabledef import *
@@ -14,6 +14,7 @@ app.config.from_object('config')
 @app.route('/')
 def home():
     if not session.get('logged_in'):
+        print(os.environ.get('API_KEY'), 'double checking env keys are read')
         return render_template('login.html')
     else:
         return render_template('home.html')
