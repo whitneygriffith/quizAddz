@@ -6,7 +6,9 @@
 
 [Flask + Firebase](https://burhan.io/flask-web-api-with-firebase/) 
 
-[Login Auth with Flash](https://pythonspot.com/login-authentication-with-flask/)
+[Login Auth with Flask](https://pythonspot.com/login-authentication-with-flask/)
+
+[Firebase Auth and Database](https://github.com/thisbejim/Pyrebase)
 
 [Linux for Windows Venv Setup](http://timmyreilly.azurewebsites.net/python-with-ubuntu-on-windows/)
 
@@ -54,6 +56,7 @@ OR
 The following **required** user stories are:
 
 - [x] User can to login/logout.
+- [x] User can signup.
 - [ ] User can create challenge with a name at least 3 questions in challenge.
 - [ ] User can answer challenge, see scores, and quit challenge.
 - [ ] User can view all created challenges.
@@ -61,6 +64,7 @@ The following **required** user stories are:
 
 The following **optional** user stories are:
 
+- [ ] Error Handling
 - [ ] User can complete other users challenges.
 - [ ] User can compete with other users on same challenge.
 - [ ] User can attempt questions multiple times.
@@ -74,3 +78,13 @@ Here's a walkthrough of implemented user stories:
 <img src='https://imgur.com/v4UFdGK.gif'  title='Login/Logout' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+<img src='https://imgur.com/svo6oXx.gif'  title='Signup/Login/Logout' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+<img src='https://imgur.com/K8lNxIR.gif'  title='Signup/Login/Logout with Firebase' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+

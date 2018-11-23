@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, flash, redirect, session, abort
 from forms import Login
-from firebaseAPI import login, signup, logout
+from firebaseAPI import login, logout, signups, getChallenges, createChallenges
 import os
 from sqlalchemy.orm import sessionmaker
 from tabledef import *
@@ -25,17 +25,24 @@ def do_login():
     POST_USERNAME = str(request.form['username'])
     POST_PASSWORD = str(request.form['password'])
  
-    Session = sessionmaker(bind=engine)
-    s = Session()
-    query = s.query(User).filter(User.username.in_([POST_USERNAME]), User.password.in_([POST_PASSWORD]) )
-    result = query.first()
-    if result:
-        session['logged_in'] = True
-    else:
-        flash('wrong password!')
+    user = login(POST_USERNAME, POST_PASSWORD)
+
+    print (user['idToken'], "was logged in")
+    return home()
+
+@app.route('/signup', methods = ['POST', 'GET'])
+def signup():
+    if request.method == 'GET':
+        return render_template('signup.html')
+    
+    POST_USERNAME = str(request.form['username'])
+    POST_PASSWORD = str(request.form['password'])
+ 
+    user = signups(POST_USERNAME, POST_PASSWORD)
+
+    print (user['idToken'], "was created")
     return home()
  
-
 @app.route("/logout")
 def logout():
     session['logged_in'] = False
