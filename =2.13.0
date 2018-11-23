@@ -1,0 +1,7 @@
+Collecting pycryptodome==3.4.3
+Requirement already satisfied: requests in ./venv/lib/python2.7/site-packages (2.11.1)
+Installing collected packages: pycryptodome
+  Found existing installation: pycryptodome 3.7.0
+    Uninstalling pycryptodome-3.7.0:
+      Successfully uninstalled pycryptodome-3.7.0
+Successfully installed pycryptodome-3.4.3

@@ -4,7 +4,9 @@
 
 [Based on the Flask tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 
-[Flask + Firebase]( https://burhan.io/flask-web-api-with-firebase/) 
+[Flask + Firebase](https://burhan.io/flask-web-api-with-firebase/) 
+
+[Login Auth with Flash](https://pythonspot.com/login-authentication-with-flask/)
 
 [Linux for Windows Venv Setup](http://timmyreilly.azurewebsites.net/python-with-ubuntu-on-windows/)
 
@@ -42,7 +44,7 @@ There is a wireframe.pdf but it don't look good so use the link above please.
 
 The following **required** user stories are:
 
-- [ ] User can to login/logout.
+- [x] User can to login/logout.
 - [ ] User can create challenge with a name at least 3 questions in challenge.
 - [ ] User can answer challenge, see scores, and quit challenge.
 - [ ] User can view all created challenges.
@@ -54,3 +56,12 @@ The following **optional** user stories are:
 - [ ] User can compete with other users on same challenge.
 - [ ] User can attempt questions multiple times.
 - [ ] Challenge will reveal the answer after multiple failed attempts.
+
+## Walkthroughs
+
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://imgur.com/v4UFdGK.gif'  title='Login/Logout' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
