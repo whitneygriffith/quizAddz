@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, flash, redirect, session, abort
 from forms import Login
-from firebaseAPI import login, logout, signups, getChallenges, createChallenges
+#from firebaseAPI import login, logout, signups, getChallenges, createChallenges
 import os
 from sqlalchemy.orm import sessionmaker
 from tabledef import *
@@ -13,6 +13,7 @@ app.config.from_object('config')
  
 @app.route('/')
 def home():
+    return render_template('flo.html')
     if not session.get('logged_in'):
         print(os.environ.get('API_KEY'), 'double checking env keys are read')
         return render_template('login.html')
@@ -25,9 +26,9 @@ def do_login():
     POST_USERNAME = str(request.form['username'])
     POST_PASSWORD = str(request.form['password'])
  
-    user = login(POST_USERNAME, POST_PASSWORD)
+    #user = login(POST_USERNAME, POST_PASSWORD)
 
-    print (user['idToken'], "was logged in")
+    #print (user['idToken'], "was logged in")
     return home()
 
 @app.route('/signup', methods = ['POST', 'GET'])
@@ -38,15 +39,16 @@ def signup():
     POST_USERNAME = str(request.form['username'])
     POST_PASSWORD = str(request.form['password'])
  
-    user = signups(POST_USERNAME, POST_PASSWORD)
+    #user = signups(POST_USERNAME, POST_PASSWORD)
 
-    print (user['idToken'], "was created")
+    #print (user['idToken'], "was created")
     return home()
  
 @app.route("/logout")
 def logout():
     session['logged_in'] = False
     return home()
+
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(12)

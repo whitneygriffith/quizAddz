@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+{% extends "base.html" %} {% block content %}
+<br>
+
+
+{% if session['logged_in'] %}
+<p>You're logged in already!</p>
+{% else %}
+<form action="/login" method="POST">
+    <div class="login">
+        <div class="login-screen">
+            <div class="app-title">
+                <h1>Flo</h1>
+            </div>
+
+            <div class="login-form">
+                <div class="control-group">
+                    <input type="text" class="login-field" value="" placeholder="Email" name="username">
+                    <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
+
+                <div class="control-group">
+                    <input type="password" class="login-field" value="" placeholder="Password" name="password">
+                    <label class="login-field-icon fui-lock" for="login-pass"></label>
+                </div>
+
+                <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block">
+                <br>
+            </div>
+        </div>
+    </div>
+</form>
+<a class="btn btn-primary btn-large btn-block" href="{{ url_for('signup') }}"> Don't have an account? Sign Up</a>
+
+
+{% endif %}
+
+
+
+
+{% endblock %}
+
+<!-- 
+
+
+    <form>
+    <fieldset>
+        <legend>Login</legend>
+        {{ form.hidden_tag() }}
+
+        <div style=font-size:20px; font-weight:bold; margin-left:150px;>
+
+            {{ form.email.label }}<br>
+            {{ form.email }}
+            <br>
+
+            {{ form.password.label }}<br>
+            {{ form.password }}
+            <br>
+
+            {{ form.submit }}
+        </div>
+        <button> Don't have an account? Sign Up</button>
+    </fieldset>
+</form>
+
+-->
