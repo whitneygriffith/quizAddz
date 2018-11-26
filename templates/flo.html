@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/static/style.css" type="text/css">
+<link rel="stylesheet" href="/static/flo.css" type="text/css">
 {% extends "base.html" %} {% block content %}
 <br>
 
@@ -6,6 +6,14 @@
 {% if session['logged_in'] %}
 <p>You're logged in already!</p>
 {% else %}
+<div align="center" class="btn createbtn">
+  <h1>Create a Challenge</h1>
+</div>
+
+<div align="center" class="btn logoutbtn">
+  <h3>Logout</h3>
+</div>
+
 <form action="/login" method="POST">
     <div class="login">
         <div class="login-screen">
@@ -40,7 +48,7 @@
 
 {% endblock %}
 
-<!-- 
+<!--
 
 
     <form>
