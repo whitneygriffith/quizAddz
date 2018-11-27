@@ -1,0 +1,111 @@
+div{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+#message{
+    padding:10px;
+    background-color:#ff9999;
+}
+
+
+.title{
+    margin:20px 0 20px 0;
+    font-size: 1.5em;
+    text-align:center;
+    font-family: 'Fredoka One', 'Open Sans', sans-serif;
+}
+
+.sub-title{
+    margin:0px 0 20px 0;
+    font-size: 1em;
+    text-align:center;
+    font-family: 'Fredoka One', 'Open Sans', sans-serif;
+}
+
+.center{
+    text-align:center;
+}
+
+.hide{
+display:none;
+}
+
+.form{
+    width:100%;
+    max-width:500px;
+    background-color:#e6f2ff;
+    margin:0 auto;
+    padding:10px;
+    border: thin solid #ccc;
+}
+
+.form-label{
+    width:100%;
+    max-width:200px;
+    margin:10px auto;
+    text-align:left;
+}
+
+.form-button{
+    background-color: #555555; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:10px 0 0 0;
+}
+
+input[type='text'], input[type='password'], input[type='number']{
+    width:100%;
+    max-width:200px;
+    height:25px;
+    border:none;
+}
+
+.select{
+    width:100%;
+    max-width:200px;
+    height:25px;
+    border:none;
+    border-radius:0px;
+    -webkit-border-radius:0px;
+    background-color:#fff;
+}
+
+.bm20{
+    margin:0 0 20px 0;
+}
+
+.center{
+    text-align:center;
+}
+
+.problem-row{
+    margin:20px 0;
+}
+
+.link{
+    cursor:pointer;
+    color:#8c1aff;
+}
+
+a{
+    text-decoration:none;
+}
+
+.right{
+    text-align:right;
+}
+
+.logout{
+    margin: 0 20px -5px 0;
+}

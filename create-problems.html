@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<link href='styles.css' type='text/css' rel='stylesheet'/>
+<link href='fonts/fredokaone.css' type='text/css' rel='stylesheet'/>
+<link href='fonts/open-sans.css' type='text/css' rel='stylesheet'/>
+</head>
+<body>
+
+<div class='right logout'><a href='login.html'>Logout</a></div>
+
+<div class='title'>Create Challenge</div>
+
+<div class='sub-title center'><a href='view-challenges.html'>View challenges</a></div>
+
+<div class='form center'>
+
+<form id='challenge-form'>
+<div id='message' class='hide'></div>
+
+<div class='form-label'>Numbers to be added</div>
+
+<input type='hidden' class='question-num' value=2><!--used to keep track of nums in question-->
+
+<div>
+<input type='number' class='num-input bm20'>
+</div>
+
+<div>
+<input type='number' class='num-input bm20'>
+</div>
+
+<div id='add-div'></div><!--has new num fields added to it-->
+
+<div id='new-question-div'></div><!--has new sets of nums added for new question-->
+
+<div class='form-label'>
+<input id='add-num' class='form-button' type='button' value='+' style='padding:15px 20px;'>
+<input id='new-question' class='form-button' type='button' value='New question' style='padding:15px 23px;'>
+</div>
+
+<div class='form-label center'>
+<input class='form-button' type='submit' value='Create'>
+</div>
+
+</form>
+
+</div>
+
+<script src='jquery.js'></script>
+<script src='scripts.js'></script>
+</body>
+</html>

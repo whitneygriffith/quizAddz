@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:index.html">
+   </FileRef>
+   <FileRef
+      location = "group:/Applications/XAMPP/xamppfiles/htdocs/quizaddz.com/styles.css">
+   </FileRef>
+   <FileRef
+      location = "group:/Applications/XAMPP/xamppfiles/htdocs/quizaddz.com/login.html">
+   </FileRef>
+   <FileRef
+      location = "group:/Applications/XAMPP/xamppfiles/htdocs/quizaddz.com/create-problems.html">
+   </FileRef>
+   <FileRef
+      location = "group:/Applications/XAMPP/xamppfiles/htdocs/quizaddz.com/view-challenges.html">
+   </FileRef>
+   <FileRef
+      location = "group:/Applications/XAMPP/xamppfiles/htdocs/quizaddz.com/challenges.html">
+   </FileRef>
+   <FileRef
+      location = "group:/Applications/XAMPP/xamppfiles/htdocs/quizaddz.com/do-challenge.html">
+   </FileRef>
+   <FileRef
+      location = "group:/Applications/XAMPP/xamppfiles/htdocs/quizaddz.com/scripts.js">
+   </FileRef>
+   <FileRef
+      location = "group:/Applications/XAMPP/xamppfiles/htdocs/quizaddz.com/database.php">
+   </FileRef>
+</Workspace>
