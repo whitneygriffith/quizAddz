@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Complete Challenges</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            
+            function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '+')
+                {
+                    document.getElementById('result').value = n1+n2;
+                }
+                
+            
+        </script>
+        
+    </head>
+    <body>
+	<br>
+	<br>
+	<br>
+		<div align="center" class="btn" ><h1 >CHALLENGE NAME</h1></div>
+		
+		
+
+		<center>
+		
+		<table>
+		
+		<br>
+		<br>
+		<br>
+        
+		<h1>Question:</h1>
+		
+		<tr>
+			
+			
+			<th>Integer </th>
+			<th>Operation</th> 
+			<th>Integer</th>
+			
+   	    </tr>
+		<br>
+		<br>
+		<tr>
+			<td><input type="text" id="n1"/></td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+</td>
+			<td><input type="text" id="n2"/></td>
+		</tr>
+
+		</table>
+		<br>
+		<br>
+		
+		<span><h1>Answer:</h1></span>
+		<span><button onclick="calc();">=</button>
+				<input type="text" id="result"/>
+		</span>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<a href="#"><h3>Log out </h3></a>
+		</center>
+		
+   </body>
+</html>
+

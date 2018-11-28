@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Create a Challenge</title>
+	<meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<center>
+	<br>
+	<br>
+	
+	
+	<div align="center" class="btn" ><h1 ><u>Create a Challenge</u></h1></div>
+	
+	<br>
+    <br>
+	<br>
+    <br>
+	
+	<form id="mathProblem" name="mathProblem" onsubmit="checkAnswer()">
+		<h2>Enter Challenge Name:</h2><input type="text" name="userAnswer" id="userAnswer">
+		<input type="Submit" name="Add">		
+	</form>
+		
+	<br>
+    <br>
+	
+	<table>
+    
+	<h2> Enter Question and Answer Options</h2>
+	<tr>
+		<th>Integer </th>
+		<th>Operation</th> 
+		<th>Integer</th>
+	</tr>
+	
+	<br>
+	<br>
+	
+	<tr>
+		<td><input type="text" id="n1"/></td>
+		<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+</td>
+		<td><input type="text" id="n2"/></td>
+	</tr>
+	</table>
+	<br>
+	
+	<form>
+		<input type="radio" name="Result" value="integer"> Possible Answer 1<br>
+		<input type="radio" name="Result" value="integer"> Possible Answer 2<br>
+		<input type="radio" name="Result" value="integer"> Possible Answer 3<br>
+		<input type="radio" name="Result" value="integer"> Possible Answer 4
+	</form>
+	
+	<br>
+	<br>
+	
+	<nav>
+		<div align="center" class="btn"><a href="Complete Challenges.html">Complete Challenge</a></div>
+	</nav>
+
+
+
+
+
+<a align="center" class="btn-primary btn btn-large btn-block" href="{{ url_for('logout') }}"> Logout</a>
+
+	</center>
+</body>
+
+
+
+</html>
+
+
+
